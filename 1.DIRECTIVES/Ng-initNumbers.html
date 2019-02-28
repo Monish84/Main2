@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+   <div ng-app="" ng-init="Members=1;javaFee=7000.5">
+
+  Member: <input type="number" ng-model="Members"><br>
+Fees:    <input type="number" ng-model="javaFee"><br>
+
+
+use in bind directive:<p ng-bind="Members*javaFee"></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+  <div ng-app="" ng-init="NUMBER=[12,23,53]">
+  <ul>EXPRESSION In Array
+    <li ng-repeat="x in NUMBER">
+      {{ x }}
+    </li>
+  </ul>
+  particular value:<p ng-bind=NUMBER[2]></p>
+</div>
+</body>
+</html>

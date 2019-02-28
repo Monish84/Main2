@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<
+<div ng-app="siliconApp" ng-controller="cost">
+
+<h1>Price in currency format: {{ price | currency }}</h1>
+
+</div>
+
+<script>
+var app = angular.module('siliconApp', []);
+app.controller('cost', function($scope) {
+    $scope.price = 58;
+});
+</script>
+
+   </body>
+</html>

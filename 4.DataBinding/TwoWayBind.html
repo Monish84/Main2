@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</script>
+<body>
+
+<div ng-app="silicon" ng-controller="control">
+    Name: <input ng-model="firstname">
+LastName: <input ng-model="lastname">
+    <h1>{{firstname+" "+lastname}}</h1>
+</div>
+
+<script>
+var app = angular.module('silicon', []);
+app.controller('control', function($scope) {
+    $scope.firstname = "Arun";
+    $scope.lastname = "Kumar";    
+});
+</script>
+      
+   </body>
+</html>
